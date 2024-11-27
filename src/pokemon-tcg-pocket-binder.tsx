@@ -18,6 +18,7 @@ type Pack = {
   Icon: string;
 };
 
+
 export default function Command() {
   const [selectedPack, setSelectedPack] = useState<string | null>(null);
 
@@ -31,7 +32,7 @@ export default function Command() {
     : [];
 
   return (
-    <List searchBarPlaceholder="Search per pack" isShowingDetail={true}>
+    <List searchBarPlaceholder="Search for packs and cards..." isShowingDetail={true} navigationTitle={selectedPack ? selectedPack : "All Packs"}>
       {selectedPack === null
         ? [
             <List.Item
@@ -54,7 +55,7 @@ export default function Command() {
                 detail={<List.Item.Detail markdown={`<img src="${pack.Img}" width="175" height="350" />`} />}
                 actions={
                   <ActionPanel>
-                    <Action title="View Cards" onAction={() => setSelectedPack(pack.Name)} />
+                    <Action title="View Cards" icon="cards.png" onAction={() => setSelectedPack(pack.Name)} />
                   </ActionPanel>
                 }
               />
