@@ -18,7 +18,6 @@ type Pack = {
   Icon: string;
 };
 
-
 export default function Command() {
   const [selectedPack, setSelectedPack] = useState<string | null>(null);
 
@@ -32,7 +31,11 @@ export default function Command() {
     : [];
 
   return (
-    <List searchBarPlaceholder="Search for packs and cards..." isShowingDetail={true} navigationTitle={selectedPack ? selectedPack : "All Packs"}>
+    <List
+      searchBarPlaceholder="Search for packs and cards..."
+      isShowingDetail={true}
+      navigationTitle={selectedPack ? selectedPack : "All Packs"}
+    >
       {selectedPack === null
         ? [
             <List.Item
@@ -42,7 +45,7 @@ export default function Command() {
               detail={<List.Item.Detail markdown="Browse all cards in the game." />}
               actions={
                 <ActionPanel>
-                  <Action title="View All Cards"  icon="cards.png" onAction={() => setSelectedPack("All Cards")} />
+                  <Action title="View All Cards" icon="cards.png" onAction={() => setSelectedPack("All Cards")} />
                 </ActionPanel>
               }
             />,
@@ -73,9 +76,8 @@ export default function Command() {
               actions={
                 <ActionPanel>
                   <Action
-                    title="How to get"
+                    title="How to Get"
                     icon="shop.png"
-
                     onAction={() =>
                       showToast({
                         style: Toast.Style.Success,
@@ -84,8 +86,7 @@ export default function Command() {
                       })
                     }
                   />
-                  <Action title="Back to Packs" icon="pack-icon.png"
-                      onAction={() => setSelectedPack(null)} />
+                  <Action title="Back to Packs" icon="pack-icon.png" onAction={() => setSelectedPack(null)} />
                 </ActionPanel>
               }
             />

@@ -1,7 +1,6 @@
 <div align="center"><img src="assets/extension-icon.png" width="90"></div>
 
-# <img src="assets/shop.png" width="28"> Pokémon TCG Pocket Binder 
-
+# <img src="assets/shop.png" width="28"> Pokémon TCG Pocket Binder
 
 [![Raycast - Store](https://img.shields.io/static/v1?label=Raycast&message=Store&color=%23FF6363&logo=raycast&logoColor=%23FF6363)](https://www.raycast.com/store)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license "Go to license section")
@@ -14,7 +13,6 @@
 <img src="assets/cards.png" width="32"> Visualize every card in the game, its rarity, ID, and every edition available.
 
 <img src="assets/pack-icon.png" width="32"> Check the cards obtainble in every pack and decide which one to open next for specific cards.
-
 
 ## Contributing
 
@@ -38,4 +36,3 @@ All card images used are © The Pokémon Company, Nintendo, and DeNA. All rights
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J110P5LI)
 
 Happy collecting! 🎉
-
